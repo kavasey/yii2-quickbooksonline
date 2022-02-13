@@ -78,8 +78,7 @@ class Quickbooksonline extends Component
         // Where the POST is sent in the second step, I also bring this from the discovery document
         $tokenEndPointUrl = $discoveryDocument['token_endpoint']; //$configs['tokenEndPointUrl'];
 
-        //$redirectUri = 'http://victorian-society.dev' . $ks->get('quickbooks.redirect-url');
-        $redirectUri = 'http://jaspers-pharmacy-app.local' . $ks->get('quickbooks.redirect-url');
+        $redirectUri =  $ks->get('quickbooks.redirect-url');
 
         // The documentation says that there will always be code for the current version of QBO, at least I put it in the variable,
         // If it ever changes, I will easily find it
